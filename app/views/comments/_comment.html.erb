@@ -1,0 +1,5 @@
+<li> <%= comment.content %>
+<%= link_to 'ver', comment_path(comment),'data-remote': true %>
+<%= link_to 'actualizar', edit_comment_path(comment),'data-remote': true %>
+<%= link_to 'Eliminar', comment_path(comment), data: { remote: true, confirm: 'seguro?' }, method: :delete %>
+</li>
